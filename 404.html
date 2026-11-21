@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Comics Downloader</title>
+  <script>
+    // Comix Downloader was renamed Comics Downloader (2026-11-21) and its site moved with the repo:
+    // old links land on the same page at the new address.
+    var p = location.pathname;
+    var moved = p.replace(/^\/comix-downloader(?=[\/-]|$)/i, '/comics-downloader');
+    location.replace((moved !== p ? moved : '/comics-downloader/') + location.search + location.hash);
+  </script>
+</head>
+<body>
+  <p><a href="/comics-downloader/">Continue to Comics Downloader</a></p>
+</body>
+</html>
